@@ -218,7 +218,21 @@ h2.title {
 .finish .finish_wrapper {
     margin-top: 41px;
     display: flex;
+    justify-content: space-between;
+}
+
+.finish .finish_wrapper .finish_item {
+    width: 204px;
+}
+
+.finish .finish_wrapper .finish_item .finish_round {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 115px;
+    background-color: cadetblue;
+    border-radius: 100%;
 }
 
 
