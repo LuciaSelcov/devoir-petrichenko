@@ -6,14 +6,13 @@
 
 .container {
     position: relative;
-    width: 1140px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .promo {
-    height: 800px;
-        background: url('../img/Background\ top.png') center center/cover no-repeat;
-        padding: 39px 0 62px 0;
+    background: url('../img/Background\ top.png') center center/cover no-repeat;
+    padding: 39px 0 62px 0;
 }
 
 .logo .logo_jpg {
@@ -40,14 +39,15 @@ h1 {
     font-family: Roboto;
     font-weight: 400;
     font-size: 41px;
-    line-height: 24px;
     text-align: center;
     text-transform: uppercase;
     color: #F9BF3B;  
 }
+
 h2.title {
     margin-top: 30px;
 }
+
 .simple .title_big{
     font-family: Roboto;
     font-weight: 900;
@@ -59,7 +59,7 @@ h2.title {
 }
 
 .promo .promo_text {
-    padding: 0 392px;
+    /* padding:  392px; */
     margin-top: 23px;
     font-family: Roboto Light;
     font-weight: 300;
@@ -76,7 +76,7 @@ h2.title {
     font-weight: 700;
 }
 
-.promo .promo_btn {
+.promo .promo_btn{
     display: block;
     margin: 0 auto;
     margin-top: 73px;
@@ -117,11 +117,16 @@ h2.title {
 }
 
 .waiting {
+    text-align: center;
     min-height: 604px;
     background-color: #EFEFEF;
     padding: 85px 0 75px 0;
 }
 
+.waiting_img{
+    width: 100%;
+    height: auto;
+}
 .waiting .waiting_header .finish .finish_header {
     left: 671px;
     font-family: Roboto;
@@ -134,7 +139,7 @@ h2.title {
 } 
 
 .finish .finish_header{
-    color: rgb(255, 255, 255);
+color: white;
 }
 
 .waiting .waiting_divider, .finish .finish_divider {
@@ -156,7 +161,8 @@ h2.title {
 
 .waiting .waiting_wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    justify-content: space-around;
     margin-top: 45px;
 }
 
@@ -180,7 +186,7 @@ h2.title {
 }
 
 .optimisation .optimisation_header {
-    margin-left: 391px;
+    margin-left: 285px;
     font-family: Roboto;
     font-weight: 400;
     font-size: 29px;
@@ -189,8 +195,8 @@ h2.title {
 }
 
 .optimisation .optimisation_text {
-    margin-top: 25px;
-    margin-left: 391px;
+    margin-top: 22px;
+    margin-left: 285px;
     font-family: Roboto;
     font-weight: 300;
     font-size: 17px;
@@ -221,24 +227,89 @@ h2.title {
     justify-content: space-between;
 }
 
-.finish .finish_wrapper .finish_item {
+.finish .finish_wrapper .finish_item{
     width: 204px;
 }
 
-.finish .finish_wrapper .finish_item .finish_round {
+.finish .finish_wrapper .finish_item .finish_round{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     width: 115px;
     height: 115px;
-    background-color: cadetblue;
+    background-color:#b3dde9;
     border-radius: 100%;
 }
 
+.finish .finish_wrapper .finish_item .finish_descr{
+    margin-top: 25px;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+
+}
+
+ .finish .finish_header{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    justify-items: center;
+}
+
+.finish .finish_descr{
+    color: rgb(255, 255, 255);  
+}
+
+.bonus .container {
+    text-align: center;
+    min-height: 604px;
+    background-color: #EFEFEF;
+    padding: 85px 0 75px 0;
+}
+
+.bonus .bonus_txt{
+    margin-top: 41px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 43px;
+/* or 143% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #252525;
+}
+
+.bonus .bonus_btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 73px;
+    width: 313px;
+    height: 72px;
+    background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
+    cursor: pointer;    
+}
+.bonus .gift{
+    margin-top: 51px;
+}
 
 
-
-/* .plan {
+.plan {
 height: 607px; 
 }
 
@@ -261,14 +332,67 @@ height: 607px;
     margin: auto;
 }
 
-.button_png{
+.promo .promo_btn{
     display: block;
-    margin: auto;
+    margin: 0 auto;
+    margin-top: 73px;
+    width: 313px;
+    height: 72px;
+    background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
 }
 
 .bottom {
     display: block;
     display: flex;
     margin: auto;
+    padding: 90px 0 25px;
 }
- */
+
+.webinar .webinar_title{
+    text-align: center;
+    justify-items: center;   
+}
+
+.webinar .webinar_text{
+    margin-top: 30px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 29px;
+    text-transform: uppercase;
+    color: #299CBD;
+    text-align: center;  
+}
+
+.webinar_txt{
+    margin-top: 15px;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;  
+}
+
+footer .container {
+    position: relative;
+    margin-top: 30px;
+    padding: 3px 20px;
+    background-color: black;
+}
+
+footer .txt{
+    margin: 20px 0 20px 0;
+    font-size: small;
+    color: rgb(243, 235, 235);
+    text-align: center;
+}
+
